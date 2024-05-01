@@ -161,5 +161,5 @@ function MsgBox(prompt, buttons, title, modes) {
 
   MsgBoxContainer.appendChild(ButtonBox);
 
-  document.body.appendChild(MsgBoxContainer);
+  parent.document.body.appendChild(MsgBoxContainer);
 }
