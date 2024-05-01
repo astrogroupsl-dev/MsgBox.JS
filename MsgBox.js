@@ -1,9 +1,10 @@
 // Loading style sheet related to the MsgBox
-var link = document.createElement("link");
+let head = document.getElementsByTagName('head')[0];
+let link = document.createElement("link");
 link.rel = "stylesheet";
 link.type = "text/css";
 link.href = "https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.css";
-document.head.appendChild(link);
+head.appendChild(link);
 
 /**
  * `MsgBox` is a function that creates and displays a custom message box on the webpage.
