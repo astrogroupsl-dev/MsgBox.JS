@@ -151,7 +151,7 @@ function MsgBox(prompt, buttons, title, modes) {
     btn.style.transition = "background-color 0.3s ease";
     btn.textContent = buttonLabels[i].text;
     btn.onclick = function () {
-      document.body.removeChild(MsgBoxContainer);
+      parent.document.body.removeChild(MsgBoxContainer);
       console.log(this.value);
       return this.value;
     };
