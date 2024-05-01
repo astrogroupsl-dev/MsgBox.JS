@@ -2,7 +2,7 @@
 var link = document.createElement("link");
 link.rel = "stylesheet";
 link.type = "text/css";
-link.href = "./MsgBox.css";
+link.href = "https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.css";
 document.head.appendChild(link);
 
 /**
