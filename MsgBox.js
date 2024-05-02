@@ -1,29 +1,10 @@
 // Loading style sheet related to the MsgBox
-var style = document.createElement("link");
+let style = document.createElement("link");
 style.href = "https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.css";
 document.head.appendChild(style);
 
-/**
- * `MsgBox` is a function that creates and displays a custom message box on the webpage.
- *
- * @param {string} [prompt="This is a default message. Please provide a custom message."] - The message to be displayed in the message box.
- * @param {string} [buttons="btnOkCancel"] - The type of buttons to be displayed. Options include: "btnOkOnly", "btnCancelOnly", "btnOkCancel", "btnYesNo", "btnYesNoCancel", "btnRetryCancel".
- * @param {string} [title="Default Title"] - The title to be displayed on the message box.
- * @param {string} [modes="_info"] - The mode of the message box which determines the icon and color. Options include: "info", "excl", "crit".
- *
- * @returns {string} This function returns the value of the button that the user clicked. The value is a string and depends on the `buttons` parameter.
- *
- * @example
- * // creates a message box with the default settings and returns the value of the clicked button
- * var result = MsgBox();
- *
- * @example
- * // creates a message box with custom settings and returns the value of the clicked button
- * var result = MsgBox("This is a custom message.", "btnOkCancel", "Custom Title", "info");
- */
-// Main callable MsgBox function
 function MsgBox(prompt, buttons, title, modes) {
-  var MsgBoxContainer = document.createElement("div");
+  let MsgBoxContainer = document.createElement("div");
   MsgBoxContainer.className = "MsgBoxContainer";
   MsgBoxContainer.style.position = "fixed";
   MsgBoxContainer.style.top = "50%";
@@ -38,7 +19,7 @@ function MsgBox(prompt, buttons, title, modes) {
   MsgBoxContainer.style.opacity = "0";
   MsgBoxContainer.style.animation = "fadeIn 0.25s ease forwards";
 
-  var TitleBox = document.createElement("div");
+  let TitleBox = document.createElement("div");
   TitleBox.className = "TitleBox";
   TitleBox.style.display = "flex";
   TitleBox.style.alignItems = "center";
@@ -48,18 +29,18 @@ function MsgBox(prompt, buttons, title, modes) {
   TitleBox.style.borderBottom = "1px solid #ccc";
   MsgBoxContainer.appendChild(TitleBox);
 
-  var Icon = document.createElement("img");
+  let Icon = document.createElement("img");
   Icon.className = "Icon";
   Icon.style.borderRadius = "50%";
   Icon.style.width = "25px";
   Icon.style.height = "25px";
 
-  var icon_size = "25x25";
-  var info_color = "44ff44";
-  var excl_color = "ff8822";
-  var crit_color = "ff2222";
-  var default_color = "124816";
-  var icon_url = "https://singlecolorimage.com/get/";
+  let icon_size = "25x25";
+  let info_color = "44ff44";
+  let excl_color = "ff8822";
+  let crit_color = "ff2222";
+  let default_color = "124816";
+  let icon_url = "https://singlecolorimage.com/get/";
 
   switch (modes) {
     case "info":
@@ -81,7 +62,7 @@ function MsgBox(prompt, buttons, title, modes) {
   }
   TitleBox.appendChild(Icon);
 
-  var TitleText = document.createElement("p");
+  let TitleText = document.createElement("p");
   TitleText.className = "TitleText";
   TitleText.style.flexGrow = "1";
   TitleText.style.marginLeft = "10px";
@@ -91,7 +72,7 @@ function MsgBox(prompt, buttons, title, modes) {
   TitleText.textContent = title;
   TitleBox.appendChild(TitleText);
 
-  var PromptText = document.createElement("p");
+  let PromptText = document.createElement("p");
   PromptText.className = "PromptText";
   PromptText.style.padding = "20px";
   PromptText.style.color = "#333";
@@ -100,7 +81,7 @@ function MsgBox(prompt, buttons, title, modes) {
   PromptText.textContent = prompt;
   MsgBoxContainer.appendChild(PromptText);
 
-  var ButtonBox = document.createElement("div");
+  let ButtonBox = document.createElement("div");
   ButtonBox.className = "ButtonBox";
   ButtonBox.style.display = "flex";
   ButtonBox.style.justifyContent = "flex-end";
@@ -108,7 +89,7 @@ function MsgBox(prompt, buttons, title, modes) {
   ButtonBox.style.backgroundColor = "#f5f5f5";
   ButtonBox.style.borderTop = "1px solid #ccc";
 
-  var buttonConfigs = {
+  let buttonConfigs = {
     btnOkOnly: [{ text: "Ok", value: "btnOk" }],
     btnCancelOnly: [{ text: "Cancel", value: "btnCancel" }],
     btnOkCancel: [
@@ -131,9 +112,9 @@ function MsgBox(prompt, buttons, title, modes) {
     btnIgnore: [{ text: "Ignore", value: "btnIgnore" }],
   };
 
-  var buttonLabels = buttonConfigs[buttons];
-  for (var i = 0; i < buttonLabels.length; i++) {
-    var btn = document.createElement("button");
+  let buttonLabels = buttonConfigs[buttons];
+  for (let i = 0; i < buttonLabels.length; i++) {
+    let btn = document.createElement("button");
     btn.className = "btn";
     btn.style.backgroundColor = "#db3434";
     btn.style.color = "#ffffff";
