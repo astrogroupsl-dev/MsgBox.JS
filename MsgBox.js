@@ -1,9 +1,22 @@
-// Loading style sheet related to the MsgBox
-let style = document.createElement("link");
-style.href = "https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.css";
-document.head.appendChild(style);
+async function loadStyleSheet(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error('Failed to load stylesheet');
+    }
+    const style = document.createElement("style");
+    style.textContent = await response.text();
+    document.head.appendChild(style);
+  } catch (error) {
+    console.error("Failed to load style sheet:", error);
+  }
+}
 
-function MsgBox(prompt, buttons, title, modes) {
+async function MsgBox(prompt, buttons, title, modes) {
+  // Load style sheet if needed
+  const styleSheetUrl = "https://astrogroupsl-dev.github.io/MsgBox.JS/MsgBox.css";
+  await loadStyleSheet(styleSheetUrl);
+
   let MsgBoxContainer = document.createElement("div");
   MsgBoxContainer.className = "MsgBoxContainer";
   MsgBoxContainer.style.position = "fixed";
