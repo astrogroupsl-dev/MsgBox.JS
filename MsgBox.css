@@ -1,3 +1,71 @@
+.MsgBoxContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 5px #000000;
+  opacity: 0;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+.TitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+.Icon {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+
+.TitleText {
+  flex-grow: 1;
+  margin-left: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.PromptText {
+  padding: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.ButtonBox {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+}
+
+.btn {
+  background-color: #db3434;
+  color: #fff;
+  border: none;
+  padding: 10p 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
 .MsgBoxContainer .btn + .btn {
   margin-left: 10px;
 }
