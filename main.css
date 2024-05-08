@@ -2,10 +2,11 @@ body {
     font-family: Consolas;
     background-color: #111;
     color: #ccc;
-    margin: 10%;
+    margin: 5%;
 }
 
 h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -34,12 +35,17 @@ h6 {
 }
 
 p {
+    margin-left: 2vw;
+}
+
+li {
     margin-left: 7vw;
 }
 
 code {
     background-color: #ccc;
     color: #000;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     padding: 2px;
