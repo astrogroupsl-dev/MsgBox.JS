@@ -1,0 +1,46 @@
+body {
+    font-family: Consolas;
+    background-color: #111;
+    color: #ccc;
+    margin: 10%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-left: 1vw;
+}
+
+h2 {
+    margin-left: 2vw;
+}
+
+h3 {
+    margin-left: 3vw;
+}
+
+h4 {
+    margin-left: 4vw;
+}
+
+h5 {
+    margin-left: 5vw;
+}
+
+h6 {
+    margin-left: 6vw;
+}
+
+p {
+    margin-left: 7vw;
+}
+
+code {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}

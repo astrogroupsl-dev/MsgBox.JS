@@ -11,6 +11,8 @@
   box-shadow: 0 0 40px 5px #000000;
   opacity: 0;
   animation: fadeIn 0.25s ease forwards;
+  min-height: 250px;
+  min-width: 250px;
 }
 
 .TitleBox {
@@ -64,6 +66,8 @@
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  min-height: 32px;
+  min-width: 64px;
 }
 
 .MsgBoxContainer .btn + .btn {

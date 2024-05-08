@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./MsgBox.css">
     <title>MsgBox.JS</title>
 </head>
 <body>
     <main>
-        <button onclick="MsgBox('HelloWorld!','btnOk','Demo','info')"></button>
+        <h1>MsgBox.JS</h1>
+        <p>A customizable message box function in JavaScript, inspired by the simplicity of Visual Basic’s MsgBox. 
+            Enhance user interaction with personalized prompts, multiple button options, and flexible modes.</p>
+
+        <h2>Usages</h2>
+
+        <h3><code>MsgBox(prompt, buttons, title, modes)</code></h3>
+
+        <h3>Parameters</h3>
+
+        <h3><code>prompt</code></h3>
+        <p>The message to be displayed in the message box.</p>
+
+        <h3><code>buttons</code></h3>
+        <p>Defines the set of buttons to be displayed in the message box.<br>Options include: <code>btnOkOnly</code>, <code>btnCancelOnly</code>, <code>btnOkCancel</code>, <code>btnYesNo</code>, <code>btnYesNoCancel</code>, <code>btnRetryCancel</code>, <code>btnIgnore</code>.</p>
+
+        <h3><code>title</code></h3>
+        <p>The text to be displayed in the title bar of the message box.</p>
+
+        <h3><code>modes</code></h3>
+        <p>Defines the icon to be displayed in the message box. Options include: 'info', 'excl', 'crit'. If no mode is specified, a default icon is used.</p>
     </main>
     <script src="./MsgBox.js"></script>
 </body>
