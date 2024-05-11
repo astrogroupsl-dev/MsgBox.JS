@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="400"
+   viewBox="0 0 270.93333 105.83334"
+   version="1.1"
+   id="svg145"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="MsgBox.JS-welcome.svg"
+   inkscape:export-filename="MsgBox.JS-welcome.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title268">MsgBox.JS</title>
+  <sodipodi:namedview
+     id="namedview147"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#404040"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.67402315"
+     inkscape:cx="491.08106"
+     inkscape:cy="164.68277"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs142" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.7919px;font-family:'Neon Sans';-inkscape-font-specification:'Neon Sans Bold';text-align:center;text-anchor:middle;mix-blend-mode:overlay;fill:#ffffff;fill-opacity:1;stroke-width:24.0414;paint-order:markers fill stroke"
+       x="135.44501"
+       y="71.029663"
+       id="text380"
+       transform="scale(1.0001599,0.99984013)"><tspan
+         sodipodi:role="line"
+         id="tspan378"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Neon Sans';-inkscape-font-specification:'Neon Sans Bold';fill:#ffffff;fill-opacity:1;stroke-width:24.0414"
+         x="135.44502"
+         y="71.029663">MsgBox.JS</tspan></text>
+    <rect
+       style="display:inline;mix-blend-mode:lighten;fill:none;stroke-width:2.5508;paint-order:markers fill stroke"
+       id="rect2097"
+       width="270.93332"
+       height="105.83334"
+       x="1.0554101e-05"
+       y="-3.7451173e-06"
+       rx="33.866665" />
+  </g>
+  <metadata
+     id="metadata266">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>MsgBox.JS</dc:title>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>AstroGroupSL</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:coverage>Copyright 2024. All rights reseved.</dc:coverage>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
