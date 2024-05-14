@@ -1,3 +1,9 @@
+:root {
+    --page-full-width: 100%;
+    --background-color: #345;
+    --font-color: #eee;
+}
+
 html {
     user-select: none;
     -moz-user-select: none;
@@ -5,8 +11,8 @@ html {
 }
 
 body {
-    background-color: #345;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--font-color);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -14,7 +20,7 @@ body {
 }
 
 header {
-    background-image: url('../svg/large-triangles.svg');
+    background-image: url('../svg/liquid-cheese.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +30,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: var(--page-full-width);
 }
 
 header .logo {
@@ -32,9 +38,9 @@ header .logo {
 }
 
 header .search input[type=text] {
-    background-color: #345a;
+    background-color: var(--background-color);
     border: none;
-    color: #ccc;
+    color: var(--font-color);
     border-radius: 5px;
     margin: 5px;
     padding: 10px;
@@ -42,15 +48,15 @@ header .search input[type=text] {
 }
 
 header .search input[type=submit] {
-    background-color: #345a;
+    background-color: var(--background-color);
     border: none;
     border-radius: 5px;
-    color: #ccc;
+    color: var(--font-color);
     padding: 10px;
 }
 
 header a {
-    color: #fff;
+    color: var(--font-color);
     font-size: 19px;
     font-weight: bold;
     text-decoration: none;
